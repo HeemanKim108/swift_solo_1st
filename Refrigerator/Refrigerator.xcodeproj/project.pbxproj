@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		456EDC122750AB3700400AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EDC112750AB3700400AF2 /* AppDelegate.swift */; };
+		456EDC142750AB3700400AF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EDC132750AB3700400AF2 /* SceneDelegate.swift */; };
+		456EDC162750AB3700400AF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EDC152750AB3700400AF2 /* ViewController.swift */; };
+		456EDC192750AB3700400AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456EDC172750AB3700400AF2 /* Main.storyboard */; };
+		456EDC1B2750AB3900400AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456EDC1A2750AB3900400AF2 /* Assets.xcassets */; };
+		456EDC1E2750AB3900400AF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456EDC1C2750AB3900400AF2 /* LaunchScreen.storyboard */; };
+		456EDC292750AB3900400AF2 /* RefrigeratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EDC282750AB3900400AF2 /* RefrigeratorTests.swift */; };
+		456EDC332750AB3900400AF2 /* RefrigeratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EDC322750AB3900400AF2 /* RefrigeratorUITests.swift */; };
+		456EDC352750AB3900400AF2 /* RefrigeratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EDC342750AB3900400AF2 /* RefrigeratorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		456EDC252750AB3900400AF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 456EDC062750AB3700400AF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 456EDC0D2750AB3700400AF2;
+			remoteInfo = Refrigerator;
+		};
+		456EDC2F2750AB3900400AF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 456EDC062750AB3700400AF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 456EDC0D2750AB3700400AF2;
+			remoteInfo = Refrigerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		456EDC0E2750AB3700400AF2 /* Refrigerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Refrigerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		456EDC112750AB3700400AF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		456EDC132750AB3700400AF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		456EDC152750AB3700400AF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		456EDC182750AB3700400AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		456EDC1A2750AB3900400AF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		456EDC1D2750AB3900400AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		456EDC1F2750AB3900400AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456EDC242750AB3900400AF2 /* RefrigeratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefrigeratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		456EDC282750AB3900400AF2 /* RefrigeratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorTests.swift; sourceTree = "<group>"; };
+		456EDC2E2750AB3900400AF2 /* RefrigeratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefrigeratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		456EDC322750AB3900400AF2 /* RefrigeratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorUITests.swift; sourceTree = "<group>"; };
+		456EDC342750AB3900400AF2 /* RefrigeratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		456EDC0B2750AB3700400AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456EDC212750AB3900400AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456EDC2B2750AB3900400AF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		456EDC052750AB3700400AF2 = {
+			isa = PBXGroup;
+			children = (
+				456EDC102750AB3700400AF2 /* Refrigerator */,
+				456EDC272750AB3900400AF2 /* RefrigeratorTests */,
+				456EDC312750AB3900400AF2 /* RefrigeratorUITests */,
+				456EDC0F2750AB3700400AF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		456EDC0F2750AB3700400AF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				456EDC0E2750AB3700400AF2 /* Refrigerator.app */,
+				456EDC242750AB3900400AF2 /* RefrigeratorTests.xctest */,
+				456EDC2E2750AB3900400AF2 /* RefrigeratorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		456EDC102750AB3700400AF2 /* Refrigerator */ = {
+			isa = PBXGroup;
+			children = (
+				456EDC112750AB3700400AF2 /* AppDelegate.swift */,
+				456EDC132750AB3700400AF2 /* SceneDelegate.swift */,
+				456EDC152750AB3700400AF2 /* ViewController.swift */,
+				456EDC172750AB3700400AF2 /* Main.storyboard */,
+				456EDC1A2750AB3900400AF2 /* Assets.xcassets */,
+				456EDC1C2750AB3900400AF2 /* LaunchScreen.storyboard */,
+				456EDC1F2750AB3900400AF2 /* Info.plist */,
+			);
+			path = Refrigerator;
+			sourceTree = "<group>";
+		};
+		456EDC272750AB3900400AF2 /* RefrigeratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				456EDC282750AB3900400AF2 /* RefrigeratorTests.swift */,
+			);
+			path = RefrigeratorTests;
+			sourceTree = "<group>";
+		};
+		456EDC312750AB3900400AF2 /* RefrigeratorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				456EDC322750AB3900400AF2 /* RefrigeratorUITests.swift */,
+				456EDC342750AB3900400AF2 /* RefrigeratorUITestsLaunchTests.swift */,
+			);
+			path = RefrigeratorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		456EDC0D2750AB3700400AF2 /* Refrigerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456EDC382750AB3900400AF2 /* Build configuration list for PBXNativeTarget "Refrigerator" */;
+			buildPhases = (
+				456EDC0A2750AB3700400AF2 /* Sources */,
+				456EDC0B2750AB3700400AF2 /* Frameworks */,
+				456EDC0C2750AB3700400AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Refrigerator;
+			productName = Refrigerator;
+			productReference = 456EDC0E2750AB3700400AF2 /* Refrigerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		456EDC232750AB3900400AF2 /* RefrigeratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456EDC3B2750AB3900400AF2 /* Build configuration list for PBXNativeTarget "RefrigeratorTests" */;
+			buildPhases = (
+				456EDC202750AB3900400AF2 /* Sources */,
+				456EDC212750AB3900400AF2 /* Frameworks */,
+				456EDC222750AB3900400AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				456EDC262750AB3900400AF2 /* PBXTargetDependency */,
+			);
+			name = RefrigeratorTests;
+			productName = RefrigeratorTests;
+			productReference = 456EDC242750AB3900400AF2 /* RefrigeratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		456EDC2D2750AB3900400AF2 /* RefrigeratorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456EDC3E2750AB3900400AF2 /* Build configuration list for PBXNativeTarget "RefrigeratorUITests" */;
+			buildPhases = (
+				456EDC2A2750AB3900400AF2 /* Sources */,
+				456EDC2B2750AB3900400AF2 /* Frameworks */,
+				456EDC2C2750AB3900400AF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				456EDC302750AB3900400AF2 /* PBXTargetDependency */,
+			);
+			name = RefrigeratorUITests;
+			productName = RefrigeratorUITests;
+			productReference = 456EDC2E2750AB3900400AF2 /* RefrigeratorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		456EDC062750AB3700400AF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					456EDC0D2750AB3700400AF2 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					456EDC232750AB3900400AF2 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 456EDC0D2750AB3700400AF2;
+					};
+					456EDC2D2750AB3900400AF2 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 456EDC0D2750AB3700400AF2;
+					};
+				};
+			};
+			buildConfigurationList = 456EDC092750AB3700400AF2 /* Build configuration list for PBXProject "Refrigerator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 456EDC052750AB3700400AF2;
+			productRefGroup = 456EDC0F2750AB3700400AF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				456EDC0D2750AB3700400AF2 /* Refrigerator */,
+				456EDC232750AB3900400AF2 /* RefrigeratorTests */,
+				456EDC2D2750AB3900400AF2 /* RefrigeratorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		456EDC0C2750AB3700400AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456EDC1E2750AB3900400AF2 /* LaunchScreen.storyboard in Resources */,
+				456EDC1B2750AB3900400AF2 /* Assets.xcassets in Resources */,
+				456EDC192750AB3700400AF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456EDC222750AB3900400AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456EDC2C2750AB3900400AF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		456EDC0A2750AB3700400AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456EDC162750AB3700400AF2 /* ViewController.swift in Sources */,
+				456EDC122750AB3700400AF2 /* AppDelegate.swift in Sources */,
+				456EDC142750AB3700400AF2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456EDC202750AB3900400AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456EDC292750AB3900400AF2 /* RefrigeratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456EDC2A2750AB3900400AF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456EDC352750AB3900400AF2 /* RefrigeratorUITestsLaunchTests.swift in Sources */,
+				456EDC332750AB3900400AF2 /* RefrigeratorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		456EDC262750AB3900400AF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 456EDC0D2750AB3700400AF2 /* Refrigerator */;
+			targetProxy = 456EDC252750AB3900400AF2 /* PBXContainerItemProxy */;
+		};
+		456EDC302750AB3900400AF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 456EDC0D2750AB3700400AF2 /* Refrigerator */;
+			targetProxy = 456EDC2F2750AB3900400AF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		456EDC172750AB3700400AF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				456EDC182750AB3700400AF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		456EDC1C2750AB3900400AF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				456EDC1D2750AB3900400AF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		456EDC362750AB3900400AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		456EDC372750AB3900400AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		456EDC392750AB3900400AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Refrigerator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Refrigerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		456EDC3A2750AB3900400AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Refrigerator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Refrigerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		456EDC3C2750AB3900400AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RefrigeratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refrigerator.app/Refrigerator";
+			};
+			name = Debug;
+		};
+		456EDC3D2750AB3900400AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RefrigeratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refrigerator.app/Refrigerator";
+			};
+			name = Release;
+		};
+		456EDC3F2750AB3900400AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RefrigeratorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Refrigerator;
+			};
+			name = Debug;
+		};
+		456EDC402750AB3900400AF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RefrigeratorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Refrigerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		456EDC092750AB3700400AF2 /* Build configuration list for PBXProject "Refrigerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456EDC362750AB3900400AF2 /* Debug */,
+				456EDC372750AB3900400AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456EDC382750AB3900400AF2 /* Build configuration list for PBXNativeTarget "Refrigerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456EDC392750AB3900400AF2 /* Debug */,
+				456EDC3A2750AB3900400AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456EDC3B2750AB3900400AF2 /* Build configuration list for PBXNativeTarget "RefrigeratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456EDC3C2750AB3900400AF2 /* Debug */,
+				456EDC3D2750AB3900400AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456EDC3E2750AB3900400AF2 /* Build configuration list for PBXNativeTarget "RefrigeratorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456EDC3F2750AB3900400AF2 /* Debug */,
+				456EDC402750AB3900400AF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 456EDC062750AB3700400AF2 /* Project object */;
+}
