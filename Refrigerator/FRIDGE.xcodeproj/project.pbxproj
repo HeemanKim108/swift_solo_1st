@@ -19,6 +19,8 @@
 		45935D04274DD81F00A3602D /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45935D03274DD81F00A3602D /* AddReminderViewController.swift */; };
 		45A725FA2755EE3D00BC81C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A725F92755EE3D00BC81C9 /* HomeViewController.swift */; };
 		45A725FC2755F4DD00BC81C9 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A725FB2755F4DD00BC81C9 /* RecipeViewController.swift */; };
+		45A725FF2756743100BC81C9 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = 45A725FD2756743000BC81C9 /* A.png */; };
+		45A726002756743100BC81C9 /* B.png in Resources */ = {isa = PBXBuildFile; fileRef = 45A725FE2756743000BC81C9 /* B.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		45935D03274DD81F00A3602D /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
 		45A725F92755EE3D00BC81C9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		45A725FB2755F4DD00BC81C9 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		45A725FD2756743000BC81C9 /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
+		45A725FE2756743000BC81C9 /* B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				45935CD1274DC01C00A3602D /* AppDelegate.swift */,
 				45935CD3274DC01C00A3602D /* SceneDelegate.swift */,
 				45935CD7274DC01C00A3602D /* Main.storyboard */,
+				45A725FD2756743000BC81C9 /* A.png */,
+				45A725FE2756743000BC81C9 /* B.png */,
 				45935D03274DD81F00A3602D /* AddReminderViewController.swift */,
 				45935D01274DC75F00A3602D /* RemindersTableViewController.swift */,
 				45935CDA274DC01F00A3602D /* Assets.xcassets */,
@@ -240,7 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A726002756743100BC81C9 /* B.png in Resources */,
 				45935CDE274DC01F00A3602D /* LaunchScreen.storyboard in Resources */,
+				45A725FF2756743100BC81C9 /* A.png in Resources */,
 				45935CDB274DC01F00A3602D /* Assets.xcassets in Resources */,
 				45935CD9274DC01C00A3602D /* Main.storyboard in Resources */,
 			);

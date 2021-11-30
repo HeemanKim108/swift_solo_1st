@@ -1,17 +1,12 @@
 
 import UIKit
 
-//class Food {
-//    init() {
-//    }
-//    var name : String?
-//    var sellByDate : Date?
+//protocol ReminderTableViewControllerDelegate: AnyObject {
+//    func deliveryData(withText: String?)
 //}
 
-//1
 final class RemindersTableViewController: UITableViewController {
     
-//    private var list = Array<Food>()
     private var dateFormat = DateFormatter()
     private var reminders: [String] = [
         "Test",
@@ -23,24 +18,15 @@ final class RemindersTableViewController: UITableViewController {
     override func viewDidLoad() {
         dateFormat.dateFormat = "yyyy-MM-dd"
         dateFormat.locale = Locale.init(identifier: "en_JP")
-        
-//        let fvo = Food()
-//        fvo.name = "tomato"
-//        fvo.sellByDate = dateFormat.date(from: "2021-12-04")
-//        list.append(fvo)
-//        print(list)
         super.viewDidLoad()
-        
         tableView.allowsSelection = false
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if let navigationVC = segue.destination as? UINavigationController,
            let addReminderVC = navigationVC.topViewController as? AddReminderViewController {
             addReminderVC.delegate = self
         }
-        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -79,5 +65,4 @@ extension RemindersTableViewController: AddReminderViewControllerDelegate {
             tableView.reloadData()
         }
     }
-
 }
