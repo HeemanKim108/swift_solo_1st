@@ -1,13 +1,13 @@
 //
-//  RefrigeratorUITests.swift
-//  RefrigeratorUITests
+//  ReminderUITests.swift
+//  ReminderUITests
 //
-//  Created by HeemanKim on 2021/11/26.
+//  Created by HeemanKim on 2021/11/24.
 //
 
 import XCTest
 
-class RefrigeratorUITests: XCTestCase {
+class ReminderUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

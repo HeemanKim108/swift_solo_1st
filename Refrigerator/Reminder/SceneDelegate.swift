@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Refrigerator
+//  Reminder
 //
-//  Created by HeemanKim on 2021/11/26.
+//  Created by HeemanKim on 2021/11/24.
 //
 
 import UIKit

@@ -1,13 +1,13 @@
 //
-//  RefrigeratorUITestsLaunchTests.swift
-//  RefrigeratorUITests
+//  ReminderUITestsLaunchTests.swift
+//  ReminderUITests
 //
-//  Created by HeemanKim on 2021/11/26.
+//  Created by HeemanKim on 2021/11/24.
 //
 
 import XCTest
 
-class RefrigeratorUITestsLaunchTests: XCTestCase {
+class ReminderUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

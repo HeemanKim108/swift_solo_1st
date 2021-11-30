@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Refrigerator
+//  Reminder
 //
-//  Created by HeemanKim on 2021/11/26.
+//  Created by HeemanKim on 2021/11/24.
 //
 
 import UIKit
@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        debugPrint(#function)
         return true
     }
 

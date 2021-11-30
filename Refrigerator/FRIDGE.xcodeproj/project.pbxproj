@@ -7,66 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		456EDC122750AB3700400AF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EDC112750AB3700400AF2 /* AppDelegate.swift */; };
-		456EDC142750AB3700400AF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EDC132750AB3700400AF2 /* SceneDelegate.swift */; };
-		456EDC162750AB3700400AF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EDC152750AB3700400AF2 /* ViewController.swift */; };
-		456EDC192750AB3700400AF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456EDC172750AB3700400AF2 /* Main.storyboard */; };
-		456EDC1B2750AB3900400AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456EDC1A2750AB3900400AF2 /* Assets.xcassets */; };
-		456EDC1E2750AB3900400AF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456EDC1C2750AB3900400AF2 /* LaunchScreen.storyboard */; };
-		456EDC292750AB3900400AF2 /* RefrigeratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EDC282750AB3900400AF2 /* RefrigeratorTests.swift */; };
-		456EDC332750AB3900400AF2 /* RefrigeratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EDC322750AB3900400AF2 /* RefrigeratorUITests.swift */; };
-		456EDC352750AB3900400AF2 /* RefrigeratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EDC342750AB3900400AF2 /* RefrigeratorUITestsLaunchTests.swift */; };
+		45935CD2274DC01C00A3602D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45935CD1274DC01C00A3602D /* AppDelegate.swift */; };
+		45935CD4274DC01C00A3602D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45935CD3274DC01C00A3602D /* SceneDelegate.swift */; };
+		45935CD9274DC01C00A3602D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45935CD7274DC01C00A3602D /* Main.storyboard */; };
+		45935CDB274DC01F00A3602D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45935CDA274DC01F00A3602D /* Assets.xcassets */; };
+		45935CDE274DC01F00A3602D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45935CDC274DC01F00A3602D /* LaunchScreen.storyboard */; };
+		45935CE9274DC01F00A3602D /* ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45935CE8274DC01F00A3602D /* ReminderTests.swift */; };
+		45935CF3274DC01F00A3602D /* ReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45935CF2274DC01F00A3602D /* ReminderUITests.swift */; };
+		45935CF5274DC01F00A3602D /* ReminderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45935CF4274DC01F00A3602D /* ReminderUITestsLaunchTests.swift */; };
+		45935D02274DC75F00A3602D /* RemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45935D01274DC75F00A3602D /* RemindersTableViewController.swift */; };
+		45935D04274DD81F00A3602D /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45935D03274DD81F00A3602D /* AddReminderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		456EDC252750AB3900400AF2 /* PBXContainerItemProxy */ = {
+		45935CE5274DC01F00A3602D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 456EDC062750AB3700400AF2 /* Project object */;
+			containerPortal = 45935CC6274DC01C00A3602D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 456EDC0D2750AB3700400AF2;
-			remoteInfo = Refrigerator;
+			remoteGlobalIDString = 45935CCD274DC01C00A3602D;
+			remoteInfo = Reminder;
 		};
-		456EDC2F2750AB3900400AF2 /* PBXContainerItemProxy */ = {
+		45935CEF274DC01F00A3602D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 456EDC062750AB3700400AF2 /* Project object */;
+			containerPortal = 45935CC6274DC01C00A3602D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 456EDC0D2750AB3700400AF2;
-			remoteInfo = Refrigerator;
+			remoteGlobalIDString = 45935CCD274DC01C00A3602D;
+			remoteInfo = Reminder;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		456EDC0E2750AB3700400AF2 /* Refrigerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Refrigerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		456EDC112750AB3700400AF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		456EDC132750AB3700400AF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		456EDC152750AB3700400AF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		456EDC182750AB3700400AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		456EDC1A2750AB3900400AF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		456EDC1D2750AB3900400AF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		456EDC1F2750AB3900400AF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		456EDC242750AB3900400AF2 /* RefrigeratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefrigeratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		456EDC282750AB3900400AF2 /* RefrigeratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorTests.swift; sourceTree = "<group>"; };
-		456EDC2E2750AB3900400AF2 /* RefrigeratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefrigeratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		456EDC322750AB3900400AF2 /* RefrigeratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorUITests.swift; sourceTree = "<group>"; };
-		456EDC342750AB3900400AF2 /* RefrigeratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		45935CCE274DC01C00A3602D /* FRIDGE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRIDGE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45935CD1274DC01C00A3602D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45935CD3274DC01C00A3602D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		45935CD8274DC01C00A3602D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45935CDA274DC01F00A3602D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45935CDD274DC01F00A3602D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45935CDF274DC01F00A3602D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45935CE4274DC01F00A3602D /* FRIDGETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRIDGETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45935CE8274DC01F00A3602D /* ReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTests.swift; sourceTree = "<group>"; };
+		45935CEE274DC01F00A3602D /* FRIDGEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRIDGEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45935CF2274DC01F00A3602D /* ReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderUITests.swift; sourceTree = "<group>"; };
+		45935CF4274DC01F00A3602D /* ReminderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		45935D01274DC75F00A3602D /* RemindersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersTableViewController.swift; sourceTree = "<group>"; tabWidth = 10; };
+		45935D03274DD81F00A3602D /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		456EDC0B2750AB3700400AF2 /* Frameworks */ = {
+		45935CCB274DC01C00A3602D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		456EDC212750AB3900400AF2 /* Frameworks */ = {
+		45935CE1274DC01F00A3602D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		456EDC2B2750AB3900400AF2 /* Frameworks */ = {
+		45935CEB274DC01F00A3602D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,137 +78,138 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		456EDC052750AB3700400AF2 = {
+		45935CC5274DC01C00A3602D = {
 			isa = PBXGroup;
 			children = (
-				456EDC102750AB3700400AF2 /* Refrigerator */,
-				456EDC272750AB3900400AF2 /* RefrigeratorTests */,
-				456EDC312750AB3900400AF2 /* RefrigeratorUITests */,
-				456EDC0F2750AB3700400AF2 /* Products */,
+				45935CD0274DC01C00A3602D /* Reminder */,
+				45935CE7274DC01F00A3602D /* ReminderTests */,
+				45935CF1274DC01F00A3602D /* ReminderUITests */,
+				45935CCF274DC01C00A3602D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		456EDC0F2750AB3700400AF2 /* Products */ = {
+		45935CCF274DC01C00A3602D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				456EDC0E2750AB3700400AF2 /* Refrigerator.app */,
-				456EDC242750AB3900400AF2 /* RefrigeratorTests.xctest */,
-				456EDC2E2750AB3900400AF2 /* RefrigeratorUITests.xctest */,
+				45935CCE274DC01C00A3602D /* FRIDGE.app */,
+				45935CE4274DC01F00A3602D /* FRIDGETests.xctest */,
+				45935CEE274DC01F00A3602D /* FRIDGEUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		456EDC102750AB3700400AF2 /* Refrigerator */ = {
+		45935CD0274DC01C00A3602D /* Reminder */ = {
 			isa = PBXGroup;
 			children = (
-				456EDC112750AB3700400AF2 /* AppDelegate.swift */,
-				456EDC132750AB3700400AF2 /* SceneDelegate.swift */,
-				456EDC152750AB3700400AF2 /* ViewController.swift */,
-				456EDC172750AB3700400AF2 /* Main.storyboard */,
-				456EDC1A2750AB3900400AF2 /* Assets.xcassets */,
-				456EDC1C2750AB3900400AF2 /* LaunchScreen.storyboard */,
-				456EDC1F2750AB3900400AF2 /* Info.plist */,
+				45935CD1274DC01C00A3602D /* AppDelegate.swift */,
+				45935CD3274DC01C00A3602D /* SceneDelegate.swift */,
+				45935CD7274DC01C00A3602D /* Main.storyboard */,
+				45935D03274DD81F00A3602D /* AddReminderViewController.swift */,
+				45935D01274DC75F00A3602D /* RemindersTableViewController.swift */,
+				45935CDA274DC01F00A3602D /* Assets.xcassets */,
+				45935CDC274DC01F00A3602D /* LaunchScreen.storyboard */,
+				45935CDF274DC01F00A3602D /* Info.plist */,
 			);
-			path = Refrigerator;
+			path = Reminder;
 			sourceTree = "<group>";
 		};
-		456EDC272750AB3900400AF2 /* RefrigeratorTests */ = {
+		45935CE7274DC01F00A3602D /* ReminderTests */ = {
 			isa = PBXGroup;
 			children = (
-				456EDC282750AB3900400AF2 /* RefrigeratorTests.swift */,
+				45935CE8274DC01F00A3602D /* ReminderTests.swift */,
 			);
-			path = RefrigeratorTests;
+			path = ReminderTests;
 			sourceTree = "<group>";
 		};
-		456EDC312750AB3900400AF2 /* RefrigeratorUITests */ = {
+		45935CF1274DC01F00A3602D /* ReminderUITests */ = {
 			isa = PBXGroup;
 			children = (
-				456EDC322750AB3900400AF2 /* RefrigeratorUITests.swift */,
-				456EDC342750AB3900400AF2 /* RefrigeratorUITestsLaunchTests.swift */,
+				45935CF2274DC01F00A3602D /* ReminderUITests.swift */,
+				45935CF4274DC01F00A3602D /* ReminderUITestsLaunchTests.swift */,
 			);
-			path = RefrigeratorUITests;
+			path = ReminderUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		456EDC0D2750AB3700400AF2 /* Refrigerator */ = {
+		45935CCD274DC01C00A3602D /* FRIDGE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 456EDC382750AB3900400AF2 /* Build configuration list for PBXNativeTarget "Refrigerator" */;
+			buildConfigurationList = 45935CF8274DC01F00A3602D /* Build configuration list for PBXNativeTarget "FRIDGE" */;
 			buildPhases = (
-				456EDC0A2750AB3700400AF2 /* Sources */,
-				456EDC0B2750AB3700400AF2 /* Frameworks */,
-				456EDC0C2750AB3700400AF2 /* Resources */,
+				45935CCA274DC01C00A3602D /* Sources */,
+				45935CCB274DC01C00A3602D /* Frameworks */,
+				45935CCC274DC01C00A3602D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Refrigerator;
-			productName = Refrigerator;
-			productReference = 456EDC0E2750AB3700400AF2 /* Refrigerator.app */;
+			name = FRIDGE;
+			productName = Reminder;
+			productReference = 45935CCE274DC01C00A3602D /* FRIDGE.app */;
 			productType = "com.apple.product-type.application";
 		};
-		456EDC232750AB3900400AF2 /* RefrigeratorTests */ = {
+		45935CE3274DC01F00A3602D /* FRIDGETests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 456EDC3B2750AB3900400AF2 /* Build configuration list for PBXNativeTarget "RefrigeratorTests" */;
+			buildConfigurationList = 45935CFB274DC01F00A3602D /* Build configuration list for PBXNativeTarget "FRIDGETests" */;
 			buildPhases = (
-				456EDC202750AB3900400AF2 /* Sources */,
-				456EDC212750AB3900400AF2 /* Frameworks */,
-				456EDC222750AB3900400AF2 /* Resources */,
+				45935CE0274DC01F00A3602D /* Sources */,
+				45935CE1274DC01F00A3602D /* Frameworks */,
+				45935CE2274DC01F00A3602D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				456EDC262750AB3900400AF2 /* PBXTargetDependency */,
+				45935CE6274DC01F00A3602D /* PBXTargetDependency */,
 			);
-			name = RefrigeratorTests;
-			productName = RefrigeratorTests;
-			productReference = 456EDC242750AB3900400AF2 /* RefrigeratorTests.xctest */;
+			name = FRIDGETests;
+			productName = ReminderTests;
+			productReference = 45935CE4274DC01F00A3602D /* FRIDGETests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		456EDC2D2750AB3900400AF2 /* RefrigeratorUITests */ = {
+		45935CED274DC01F00A3602D /* FRIDGEUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 456EDC3E2750AB3900400AF2 /* Build configuration list for PBXNativeTarget "RefrigeratorUITests" */;
+			buildConfigurationList = 45935CFE274DC01F00A3602D /* Build configuration list for PBXNativeTarget "FRIDGEUITests" */;
 			buildPhases = (
-				456EDC2A2750AB3900400AF2 /* Sources */,
-				456EDC2B2750AB3900400AF2 /* Frameworks */,
-				456EDC2C2750AB3900400AF2 /* Resources */,
+				45935CEA274DC01F00A3602D /* Sources */,
+				45935CEB274DC01F00A3602D /* Frameworks */,
+				45935CEC274DC01F00A3602D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				456EDC302750AB3900400AF2 /* PBXTargetDependency */,
+				45935CF0274DC01F00A3602D /* PBXTargetDependency */,
 			);
-			name = RefrigeratorUITests;
-			productName = RefrigeratorUITests;
-			productReference = 456EDC2E2750AB3900400AF2 /* RefrigeratorUITests.xctest */;
+			name = FRIDGEUITests;
+			productName = ReminderUITests;
+			productReference = 45935CEE274DC01F00A3602D /* FRIDGEUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		456EDC062750AB3700400AF2 /* Project object */ = {
+		45935CC6274DC01C00A3602D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					456EDC0D2750AB3700400AF2 = {
+					45935CCD274DC01C00A3602D = {
 						CreatedOnToolsVersion = 13.1;
 					};
-					456EDC232750AB3900400AF2 = {
+					45935CE3274DC01F00A3602D = {
 						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 456EDC0D2750AB3700400AF2;
+						TestTargetID = 45935CCD274DC01C00A3602D;
 					};
-					456EDC2D2750AB3900400AF2 = {
+					45935CED274DC01F00A3602D = {
 						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 456EDC0D2750AB3700400AF2;
+						TestTargetID = 45935CCD274DC01C00A3602D;
 					};
 				};
 			};
-			buildConfigurationList = 456EDC092750AB3700400AF2 /* Build configuration list for PBXProject "Refrigerator" */;
+			buildConfigurationList = 45935CC9274DC01C00A3602D /* Build configuration list for PBXProject "FRIDGE" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,37 +217,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 456EDC052750AB3700400AF2;
-			productRefGroup = 456EDC0F2750AB3700400AF2 /* Products */;
+			mainGroup = 45935CC5274DC01C00A3602D;
+			productRefGroup = 45935CCF274DC01C00A3602D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				456EDC0D2750AB3700400AF2 /* Refrigerator */,
-				456EDC232750AB3900400AF2 /* RefrigeratorTests */,
-				456EDC2D2750AB3900400AF2 /* RefrigeratorUITests */,
+				45935CCD274DC01C00A3602D /* FRIDGE */,
+				45935CE3274DC01F00A3602D /* FRIDGETests */,
+				45935CED274DC01F00A3602D /* FRIDGEUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		456EDC0C2750AB3700400AF2 /* Resources */ = {
+		45935CCC274DC01C00A3602D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				456EDC1E2750AB3900400AF2 /* LaunchScreen.storyboard in Resources */,
-				456EDC1B2750AB3900400AF2 /* Assets.xcassets in Resources */,
-				456EDC192750AB3700400AF2 /* Main.storyboard in Resources */,
+				45935CDE274DC01F00A3602D /* LaunchScreen.storyboard in Resources */,
+				45935CDB274DC01F00A3602D /* Assets.xcassets in Resources */,
+				45935CD9274DC01C00A3602D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		456EDC222750AB3900400AF2 /* Resources */ = {
+		45935CE2274DC01F00A3602D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		456EDC2C2750AB3900400AF2 /* Resources */ = {
+		45935CEC274DC01F00A3602D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,61 +257,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		456EDC0A2750AB3700400AF2 /* Sources */ = {
+		45935CCA274DC01C00A3602D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				456EDC162750AB3700400AF2 /* ViewController.swift in Sources */,
-				456EDC122750AB3700400AF2 /* AppDelegate.swift in Sources */,
-				456EDC142750AB3700400AF2 /* SceneDelegate.swift in Sources */,
+				45935D04274DD81F00A3602D /* AddReminderViewController.swift in Sources */,
+				45935CD2274DC01C00A3602D /* AppDelegate.swift in Sources */,
+				45935D02274DC75F00A3602D /* RemindersTableViewController.swift in Sources */,
+				45935CD4274DC01C00A3602D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		456EDC202750AB3900400AF2 /* Sources */ = {
+		45935CE0274DC01F00A3602D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				456EDC292750AB3900400AF2 /* RefrigeratorTests.swift in Sources */,
+				45935CE9274DC01F00A3602D /* ReminderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		456EDC2A2750AB3900400AF2 /* Sources */ = {
+		45935CEA274DC01F00A3602D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				456EDC352750AB3900400AF2 /* RefrigeratorUITestsLaunchTests.swift in Sources */,
-				456EDC332750AB3900400AF2 /* RefrigeratorUITests.swift in Sources */,
+				45935CF5274DC01F00A3602D /* ReminderUITestsLaunchTests.swift in Sources */,
+				45935CF3274DC01F00A3602D /* ReminderUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		456EDC262750AB3900400AF2 /* PBXTargetDependency */ = {
+		45935CE6274DC01F00A3602D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 456EDC0D2750AB3700400AF2 /* Refrigerator */;
-			targetProxy = 456EDC252750AB3900400AF2 /* PBXContainerItemProxy */;
+			target = 45935CCD274DC01C00A3602D /* FRIDGE */;
+			targetProxy = 45935CE5274DC01F00A3602D /* PBXContainerItemProxy */;
 		};
-		456EDC302750AB3900400AF2 /* PBXTargetDependency */ = {
+		45935CF0274DC01F00A3602D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 456EDC0D2750AB3700400AF2 /* Refrigerator */;
-			targetProxy = 456EDC2F2750AB3900400AF2 /* PBXContainerItemProxy */;
+			target = 45935CCD274DC01C00A3602D /* FRIDGE */;
+			targetProxy = 45935CEF274DC01F00A3602D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		456EDC172750AB3700400AF2 /* Main.storyboard */ = {
+		45935CD7274DC01C00A3602D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				456EDC182750AB3700400AF2 /* Base */,
+				45935CD8274DC01C00A3602D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		456EDC1C2750AB3900400AF2 /* LaunchScreen.storyboard */ = {
+		45935CDC274DC01F00A3602D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				456EDC1D2750AB3900400AF2 /* Base */,
+				45935CDD274DC01F00A3602D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,7 +320,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		456EDC362750AB3900400AF2 /* Debug */ = {
+		45935CF6274DC01F00A3602D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -377,7 +381,7 @@
 			};
 			name = Debug;
 		};
-		456EDC372750AB3900400AF2 /* Release */ = {
+		45935CF7274DC01F00A3602D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -432,7 +436,7 @@
 			};
 			name = Release;
 		};
-		456EDC392750AB3900400AF2 /* Debug */ = {
+		45935CF9274DC01F00A3602D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -440,7 +444,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Refrigerator/Info.plist;
+				INFOPLIST_FILE = Reminder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -451,7 +455,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Refrigerator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Reminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -459,7 +463,7 @@
 			};
 			name = Debug;
 		};
-		456EDC3A2750AB3900400AF2 /* Release */ = {
+		45935CFA274DC01F00A3602D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -467,7 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Refrigerator/Info.plist;
+				INFOPLIST_FILE = Reminder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -478,7 +482,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Refrigerator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Reminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -486,7 +490,7 @@
 			};
 			name = Release;
 		};
-		456EDC3C2750AB3900400AF2 /* Debug */ = {
+		45935CFC274DC01F00A3602D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -501,16 +505,16 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.RefrigeratorTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReminderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refrigerator.app/Refrigerator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FRIDGE.app/FRIDGE";
 			};
 			name = Debug;
 		};
-		456EDC3D2750AB3900400AF2 /* Release */ = {
+		45935CFD274DC01F00A3602D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -525,16 +529,16 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.RefrigeratorTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReminderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refrigerator.app/Refrigerator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FRIDGE.app/FRIDGE";
 			};
 			name = Release;
 		};
-		456EDC3F2750AB3900400AF2 /* Debug */ = {
+		45935CFF274DC01F00A3602D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -547,16 +551,16 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.RefrigeratorUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReminderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Refrigerator;
+				TEST_TARGET_NAME = Reminder;
 			};
 			name = Debug;
 		};
-		456EDC402750AB3900400AF2 /* Release */ = {
+		45935D00274DC01F00A3602D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -569,55 +573,55 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.RefrigeratorUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReminderUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Refrigerator;
+				TEST_TARGET_NAME = Reminder;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		456EDC092750AB3700400AF2 /* Build configuration list for PBXProject "Refrigerator" */ = {
+		45935CC9274DC01C00A3602D /* Build configuration list for PBXProject "FRIDGE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				456EDC362750AB3900400AF2 /* Debug */,
-				456EDC372750AB3900400AF2 /* Release */,
+				45935CF6274DC01F00A3602D /* Debug */,
+				45935CF7274DC01F00A3602D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		456EDC382750AB3900400AF2 /* Build configuration list for PBXNativeTarget "Refrigerator" */ = {
+		45935CF8274DC01F00A3602D /* Build configuration list for PBXNativeTarget "FRIDGE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				456EDC392750AB3900400AF2 /* Debug */,
-				456EDC3A2750AB3900400AF2 /* Release */,
+				45935CF9274DC01F00A3602D /* Debug */,
+				45935CFA274DC01F00A3602D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		456EDC3B2750AB3900400AF2 /* Build configuration list for PBXNativeTarget "RefrigeratorTests" */ = {
+		45935CFB274DC01F00A3602D /* Build configuration list for PBXNativeTarget "FRIDGETests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				456EDC3C2750AB3900400AF2 /* Debug */,
-				456EDC3D2750AB3900400AF2 /* Release */,
+				45935CFC274DC01F00A3602D /* Debug */,
+				45935CFD274DC01F00A3602D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		456EDC3E2750AB3900400AF2 /* Build configuration list for PBXNativeTarget "RefrigeratorUITests" */ = {
+		45935CFE274DC01F00A3602D /* Build configuration list for PBXNativeTarget "FRIDGEUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				456EDC3F2750AB3900400AF2 /* Debug */,
-				456EDC402750AB3900400AF2 /* Release */,
+				45935CFF274DC01F00A3602D /* Debug */,
+				45935D00274DC01F00A3602D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 456EDC062750AB3700400AF2 /* Project object */;
+	rootObject = 45935CC6274DC01C00A3602D /* Project object */;
 }
