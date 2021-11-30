@@ -30,7 +30,6 @@ class AddReminderViewController: UIViewController {
     @IBAction func didTapSaveButton(_ sender: UIBarButtonItem) {
         delegate?.addNewReminder(withText: newReminderTextField.text)
         delegate?.addNewDate(withText: lblPickerTime.text)
-        
         dismiss(animated: true) {
             debugPrint("Finished dismissing!")
     }

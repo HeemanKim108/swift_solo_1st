@@ -53,8 +53,8 @@ final class RemindersTableViewController: UITableViewController {
         
         cell.textLabel?.text = reminders[indexPath.row]
         cell.detailTextLabel?.text = "Exp.date:\(reminders2[indexPath.row])"
-//        \(reminders2[indexPath.row])"
-//        \(dateFormat.string(from: row.sellByDate!))"
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 25)
+        cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 15)
         
         return cell
     }
@@ -73,7 +73,6 @@ extension RemindersTableViewController: AddReminderViewControllerDelegate {
             tableView.reloadData()
             }
     }
-    
     func addNewReminder(withText maybeText: String?) {
         if let text = maybeText {
             reminders.append(text)

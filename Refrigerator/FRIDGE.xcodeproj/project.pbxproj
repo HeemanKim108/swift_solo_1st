@@ -17,6 +17,8 @@
 		45935CF5274DC01F00A3602D /* ReminderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45935CF4274DC01F00A3602D /* ReminderUITestsLaunchTests.swift */; };
 		45935D02274DC75F00A3602D /* RemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45935D01274DC75F00A3602D /* RemindersTableViewController.swift */; };
 		45935D04274DD81F00A3602D /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45935D03274DD81F00A3602D /* AddReminderViewController.swift */; };
+		45A725FA2755EE3D00BC81C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A725F92755EE3D00BC81C9 /* HomeViewController.swift */; };
+		45A725FC2755F4DD00BC81C9 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A725FB2755F4DD00BC81C9 /* RecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		45935CF4274DC01F00A3602D /* ReminderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		45935D01274DC75F00A3602D /* RemindersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersTableViewController.swift; sourceTree = "<group>"; tabWidth = 10; };
 		45935D03274DD81F00A3602D /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
+		45A725F92755EE3D00BC81C9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		45A725FB2755F4DD00BC81C9 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				45935CDA274DC01F00A3602D /* Assets.xcassets */,
 				45935CDC274DC01F00A3602D /* LaunchScreen.storyboard */,
 				45935CDF274DC01F00A3602D /* Info.plist */,
+				45A725F92755EE3D00BC81C9 /* HomeViewController.swift */,
+				45A725FB2755F4DD00BC81C9 /* RecipeViewController.swift */,
 			);
 			path = Reminder;
 			sourceTree = "<group>";
@@ -261,7 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A725FA2755EE3D00BC81C9 /* HomeViewController.swift in Sources */,
 				45935D04274DD81F00A3602D /* AddReminderViewController.swift in Sources */,
+				45A725FC2755F4DD00BC81C9 /* RecipeViewController.swift in Sources */,
 				45935CD2274DC01C00A3602D /* AppDelegate.swift in Sources */,
 				45935D02274DC75F00A3602D /* RemindersTableViewController.swift in Sources */,
 				45935CD4274DC01C00A3602D /* SceneDelegate.swift in Sources */,
