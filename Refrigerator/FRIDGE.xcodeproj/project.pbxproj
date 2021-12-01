@@ -23,6 +23,9 @@
 		45A726002756743100BC81C9 /* B.png in Resources */ = {isa = PBXBuildFile; fileRef = 45A725FE2756743000BC81C9 /* B.png */; };
 		45A726022756FBC900BC81C9 /* C.png in Resources */ = {isa = PBXBuildFile; fileRef = 45A726012756FBC800BC81C9 /* C.png */; };
 		45A726062756FDE400BC81C9 /* heart-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 45A726052756FDE400BC81C9 /* heart-7.png */; };
+		45A7261C2757CD2800BC81C9 /* English.png in Resources */ = {isa = PBXBuildFile; fileRef = 45A726192757CD2800BC81C9 /* English.png */; };
+		45A7261D2757CD2800BC81C9 /* Japanese.png in Resources */ = {isa = PBXBuildFile; fileRef = 45A7261A2757CD2800BC81C9 /* Japanese.png */; };
+		45A7261E2757CD2800BC81C9 /* Korean.png in Resources */ = {isa = PBXBuildFile; fileRef = 45A7261B2757CD2800BC81C9 /* Korean.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		45A725FE2756743000BC81C9 /* B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B.png; sourceTree = "<group>"; };
 		45A726012756FBC800BC81C9 /* C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C.png; sourceTree = "<group>"; };
 		45A726052756FDE400BC81C9 /* heart-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-7.png"; sourceTree = "<group>"; };
+		45A726192757CD2800BC81C9 /* English.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = English.png; sourceTree = "<group>"; };
+		45A7261A2757CD2800BC81C9 /* Japanese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Japanese.png; sourceTree = "<group>"; };
+		45A7261B2757CD2800BC81C9 /* Korean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Korean.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,9 @@
 				45935CD7274DC01C00A3602D /* Main.storyboard */,
 				45A725FD2756743000BC81C9 /* A.png */,
 				45A726012756FBC800BC81C9 /* C.png */,
+				45A726192757CD2800BC81C9 /* English.png */,
+				45A7261A2757CD2800BC81C9 /* Japanese.png */,
+				45A7261B2757CD2800BC81C9 /* Korean.png */,
 				45A726052756FDE400BC81C9 /* heart-7.png */,
 				45A725FE2756743000BC81C9 /* B.png */,
 				45935D03274DD81F00A3602D /* AddReminderViewController.swift */,
@@ -252,10 +261,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A7261C2757CD2800BC81C9 /* English.png in Resources */,
+				45A7261E2757CD2800BC81C9 /* Korean.png in Resources */,
 				45A726002756743100BC81C9 /* B.png in Resources */,
 				45935CDE274DC01F00A3602D /* LaunchScreen.storyboard in Resources */,
 				45A725FF2756743100BC81C9 /* A.png in Resources */,
 				45A726022756FBC900BC81C9 /* C.png in Resources */,
+				45A7261D2757CD2800BC81C9 /* Japanese.png in Resources */,
 				45935CDB274DC01F00A3602D /* Assets.xcassets in Resources */,
 				45A726062756FDE400BC81C9 /* heart-7.png in Resources */,
 				45935CD9274DC01C00A3602D /* Main.storyboard in Resources */,

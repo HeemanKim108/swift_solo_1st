@@ -15,7 +15,6 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func Open(_ sender: UIButton) {
-        //이미 트루일때 없애고 false일때 메세지 설정이 아니라 탭이동
         if isFridgeOn == true
         {
             let openAlert = UIAlertController(title: "Start", message: "Fridge has already opened", preferredStyle: UIAlertController.Style.alert)

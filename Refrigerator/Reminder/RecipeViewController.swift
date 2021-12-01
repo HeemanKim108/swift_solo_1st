@@ -8,6 +8,41 @@
 import UIKit
 
 final class RecipeViewController: UIViewController {
+    
+    @IBOutlet weak var Japanese: UIImageView!
+//    @IBOutlet weak var Korean: UIImageView!
+//    @IBOutlet weak var English: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+//        let customImageJ = UIImage(named: "Japanese")
+//        let newWidth = 500
+//        let newHeight = 400
+//        let newImageRect = CGRect(x: 20, y: 118, width: newWidth, height: newHeight)
+//        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+//        customImageJ?.draw(in: newImageRect)
+//        let newImageJ = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
+//        UIGraphicsEndImageContext()
+//
+//        let customImageK = UIImage(named: "Korean")
+//        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+//        customImageK?.draw(in: newImageRect)
+//        let newImageK = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
+//        UIGraphicsEndImageContext()
+//
+//        let customImageE = UIImage(named: "English")
+//        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+//        customImageE?.draw(in: newImageRect)
+//        let newImageE = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
+//        UIGraphicsEndImageContext()
+//
+        Japanese.image = UIImage(named: "Japanese")
+//        Korean.image = UIImage(named: "Korean")
+//        English.image = UIImage(named: "English")
+//
+    }
  
     @IBAction func UrlAction(_ sender: UIButton) {
         if let url = URL(string: "https://www.allrecipes.com/recipes/") {
