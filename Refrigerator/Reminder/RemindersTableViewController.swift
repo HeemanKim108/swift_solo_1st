@@ -88,9 +88,9 @@ final class RemindersTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return "Dairy product"
+            return "[Dairy product]"
         case 1:
-            return "Meat"
+            return "[Meat]"
         default:
             return ""
         }
@@ -99,16 +99,27 @@ final class RemindersTableViewController: UITableViewController {
 //if I change "reminders" to "reminderMeat", I can put items in Meat section.
 
 extension RemindersTableViewController: AddReminderViewControllerDelegate {
+    func addNewReminder(withText text1: String?, withCategory text2: String?) {
+        if let text = text2 {
+            if text == "Diary product" {
+                if let text0 = text1 {
+                    reminders.append(text0)
+                    tableView.reloadData()
+                }
+            }
+        }
+    }
+        
     func addNewDate(withText maybeText: String?) {
         if let text = maybeText {
             reminders2.append(text)
             tableView.reloadData()
             }
     }
-    func addNewReminder(withText maybeText: String?) {
-        if let text = maybeText {
-            reminders.append(text)
-            tableView.reloadData()
-        }
-    }
+//    func addNewReminder(withText maybeText: String?, withCategory maybeText2: String) {
+//        if let text = maybeText {
+//            reminders.append(text)
+//            tableView.reloadData()
+//        }
+//    }
 }
