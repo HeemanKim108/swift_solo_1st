@@ -9,10 +9,13 @@ final class RemindersTableViewController: UITableViewController {
     
     private var dateFormat = DateFormatter()
     private var reminders: [String] = [
-        "Test",
+        "yogurt",
     ]
     private var reminders2: [String] = [
         "2021-11-30",
+    ]
+    private var reminderMeat: [String] = [
+        "Chicken Salad"
     ]
     
     override func viewDidLoad() {
@@ -28,28 +31,54 @@ final class RemindersTableViewController: UITableViewController {
             addReminderVC.delegate = self
         }
     }
-    
+    //section
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return reminders.count
+        switch section {
+        case 0:
+            return self.reminders.count
+        case 1:
+            return self.reminderMeat.count
+        default:
+            return 0
+        }
+//        return reminders.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let row = list[indexPath.row]
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderCell", for: indexPath)
         
-        cell.textLabel?.text = reminders[indexPath.row]
+        var text2: String = ""
+        if indexPath.section == 0 {
+            text2 = reminders[indexPath.row]
+        } else if indexPath.section == 1 {
+            text2 = reminderMeat[indexPath.row]
+        }
+        cell.textLabel?.text = text2
+        
+//        seperate cell
+        
+//        cell.textLabel?.text = reminders[indexPath.row]
+        
         cell.detailTextLabel?.text = "Exp.date:\(reminders2[indexPath.row])"
+        
         cell.textLabel?.font = UIFont.systemFont(ofSize: 25)
         cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 15)
         
         return cell
     }
     
-    
+    //Using "if" to remove a row
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        reminders.remove(at: indexPath.row)
+        if indexPath.section == 0 {
+            reminders.remove(at: indexPath.row)
+        } else if indexPath.section == 1 {
+            reminderMeat.remove(at: indexPath.row)
+        }
         tableView.deleteRows(at: [indexPath], with: .automatic)
     }
+    
+    //section table
     
     //make section
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -59,14 +88,15 @@ final class RemindersTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return "ABC"
+            return "Dairy product"
         case 1:
-            return "DEF"
+            return "Meat"
         default:
             return ""
         }
     }
 }
+//if I change "reminders" to "reminderMeat", I can put items in Meat section.
 
 extension RemindersTableViewController: AddReminderViewControllerDelegate {
     func addNewDate(withText maybeText: String?) {
