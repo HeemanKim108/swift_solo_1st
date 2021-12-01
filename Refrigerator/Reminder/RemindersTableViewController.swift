@@ -50,6 +50,22 @@ final class RemindersTableViewController: UITableViewController {
         reminders.remove(at: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .automatic)
     }
+    
+    //make section
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    //title of section
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+            return "ABC"
+        case 1:
+            return "DEF"
+        default:
+            return ""
+        }
+    }
 }
 
 extension RemindersTableViewController: AddReminderViewControllerDelegate {
