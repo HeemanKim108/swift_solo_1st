@@ -20,10 +20,10 @@ class AddReminderViewController: UIViewController, UIPickerViewDelegate, UIPicke
         
     //Make PickerView
     var dataList = [
-        "Diary product",
+        "Dairy product",
         "Meat",
         "Fruit",
-        "etc"
+        "others"
     ]
     
     override func viewDidLoad() {

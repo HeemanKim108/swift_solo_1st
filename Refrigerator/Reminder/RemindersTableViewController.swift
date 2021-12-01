@@ -9,13 +9,19 @@ final class RemindersTableViewController: UITableViewController {
     
     private var dateFormat = DateFormatter()
     private var reminders: [String] = [
-        "yogurt",
+        "Yogurt",
     ]
     private var reminders2: [String] = [
         "2021-11-30",
     ]
     private var reminderMeat: [String] = [
-        "Chicken Salad"
+        "Chicken"
+    ]
+    private var reminderFruit: [String] = [
+        "Apple"
+    ]
+    private var reminderEtc: [String] = [
+        "Ramen"
     ]
     
     override func viewDidLoad() {
@@ -38,6 +44,10 @@ final class RemindersTableViewController: UITableViewController {
             return self.reminders.count
         case 1:
             return self.reminderMeat.count
+        case 2:
+            return self.reminderFruit.count
+        case 3:
+            return self.reminderEtc.count
         default:
             return 0
         }
@@ -53,6 +63,10 @@ final class RemindersTableViewController: UITableViewController {
             text2 = reminders[indexPath.row]
         } else if indexPath.section == 1 {
             text2 = reminderMeat[indexPath.row]
+        } else if indexPath.section == 2 {
+            text2 = reminderFruit[indexPath.row]
+        } else if indexPath.section == 3 {
+            text2 = reminderEtc[indexPath.row]
         }
         cell.textLabel?.text = text2
         
@@ -62,8 +76,8 @@ final class RemindersTableViewController: UITableViewController {
         
         cell.detailTextLabel?.text = "Exp.date:\(reminders2[indexPath.row])"
         
-        cell.textLabel?.font = UIFont.systemFont(ofSize: 25)
-        cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 15)
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 20)
+        cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 13)
         
         return cell
     }
@@ -74,6 +88,10 @@ final class RemindersTableViewController: UITableViewController {
             reminders.remove(at: indexPath.row)
         } else if indexPath.section == 1 {
             reminderMeat.remove(at: indexPath.row)
+        } else if indexPath.section == 2 {
+            reminderFruit.remove(at: indexPath.row)
+        } else if indexPath.section == 3 {
+            reminderEtc.remove(at: indexPath.row)
         }
         tableView.deleteRows(at: [indexPath], with: .automatic)
     }
@@ -82,7 +100,7 @@ final class RemindersTableViewController: UITableViewController {
     
     //make section
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 4
     }
     //title of section
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -91,6 +109,10 @@ final class RemindersTableViewController: UITableViewController {
             return "[Dairy product]"
         case 1:
             return "[Meat]"
+        case 2:
+            return "[Fruit]"
+        case 3:
+            return "[others]"
         default:
             return ""
         }
@@ -101,9 +123,24 @@ final class RemindersTableViewController: UITableViewController {
 extension RemindersTableViewController: AddReminderViewControllerDelegate {
     func addNewReminder(withText text1: String?, withCategory text2: String?) {
         if let text = text2 {
-            if text == "Diary product" {
+            if text == "Dairy product" {
                 if let text0 = text1 {
                     reminders.append(text0)
+                    tableView.reloadData()
+                }
+            } else if text == "Meat" {
+                if let text0 = text1 {
+                    reminderMeat.append(text0)
+                    tableView.reloadData()
+                }
+            } else if text == "Fruit" {
+                if let text0 = text1 {
+                    reminderFruit.append(text0)
+                    tableView.reloadData()
+                }
+            } else if text == "others" {
+                if let text0 = text1 {
+                    reminderFruit.append(text0)
                     tableView.reloadData()
                 }
             }
