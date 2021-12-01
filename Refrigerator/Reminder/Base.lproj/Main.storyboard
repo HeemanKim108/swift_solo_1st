@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Setting-->
+        <!--Alarm-->
         <scene sceneID="acs-4z-YeW">
             <objects>
-                <viewController title="Setting" id="LME-b2-CP3" sceneMemberID="viewController">
+                <viewController title="Alarm" id="LME-b2-CP3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D3a-uF-a5M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V12-Rr-WN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-833" y="859"/>
+            <point key="canvasLocation" x="241" y="811"/>
         </scene>
         <!--Recipes-->
         <scene sceneID="qjf-N3-lGg">
@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45k-wI-Ii5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797" y="-617"/>
+            <point key="canvasLocation" x="241" y="-569"/>
         </scene>
         <!--home-->
         <scene sceneID="J7u-M9-OlB">
@@ -148,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kXs-U3-Mrd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="324.63768115942031" y="-1381.4732142857142"/>
+            <point key="canvasLocation" x="242" y="-1252"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fNX-ds-aMz">
@@ -161,9 +161,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="SK6-VL-hgr" kind="relationship" relationship="viewControllers" id="X1t-Ny-Nrd"/>
-                        <segue destination="Xd6-ov-NEv" kind="relationship" relationship="viewControllers" id="o4I-R4-B4n"/>
                         <segue destination="MdH-TV-BlR" kind="relationship" relationship="viewControllers" id="jjc-TD-sMI"/>
-                        <segue destination="eLV-Ju-Ski" kind="relationship" relationship="viewControllers" id="TtH-AY-ieG"/>
+                        <segue destination="Xd6-ov-NEv" kind="relationship" relationship="viewControllers" id="dyj-nK-HOK"/>
+                        <segue destination="eLV-Ju-Ski" kind="relationship" relationship="viewControllers" id="7su-E7-wJ7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlG-Cv-N8B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -220,7 +220,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yB-3Y-mwa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="326" y="127"/>
+            <point key="canvasLocation" x="241" y="127"/>
         </scene>
         <!--Add reminder-->
         <scene sceneID="JV4-kb-2mm">
@@ -295,7 +295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNe-8a-KIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1948" y="127"/>
+            <point key="canvasLocation" x="1862" y="127"/>
         </scene>
         <!--FRIDGE-->
         <scene sceneID="giD-ei-ute">
@@ -332,7 +332,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdw-jF-Umt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1155" y="127"/>
+            <point key="canvasLocation" x="1036" y="127"/>
         </scene>
         <!--HOME-->
         <scene sceneID="zXL-Ck-2m3">
@@ -351,7 +351,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgy-JR-iwl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-519" y="-1251"/>
+            <point key="canvasLocation" x="-584" y="-1252"/>
         </scene>
         <!--RECIPES-->
         <scene sceneID="ucR-uf-khj">
@@ -372,11 +372,11 @@
             </objects>
             <point key="canvasLocation" x="-584.05797101449275" y="-568.52678571428567"/>
         </scene>
-        <!--Setting-->
+        <!--Alarm-->
         <scene sceneID="UUu-vZ-7vT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eLV-Ju-Ski" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Setting" image="circles.hexagonpath" catalog="system" id="Mr9-Sn-e9T"/>
+                    <tabBarItem key="tabBarItem" title="Alarm" image="heart-7.png" id="Mr9-Sn-e9T"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lbY-Od-5mo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -389,7 +389,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lop-QI-4qV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1630.4347826086957" y="545.75892857142856"/>
+            <point key="canvasLocation" x="-584" y="811"/>
         </scene>
         <!--home-->
         <scene sceneID="Fjj-zt-WRy">
@@ -453,8 +453,8 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
         </scene>
     </scenes>
     <resources>
-        <image name="circles.hexagonpath" catalog="system" width="128" height="112"/>
         <image name="eyes" catalog="system" width="128" height="99"/>
+        <image name="heart-7.png" width="30" height="30"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="lineweight" catalog="system" width="128" height="110"/>
         <systemColor name="labelColor">

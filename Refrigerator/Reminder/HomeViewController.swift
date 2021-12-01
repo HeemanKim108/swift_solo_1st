@@ -3,7 +3,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     let fridgeOpen = UIImage(named: "B")
-    let fridgeClose = UIImage(named: "A")
+    let fridgeClose = UIImage(named: "C")
     var isFridgeOn = false
     
     @IBOutlet var Fridge: UIImageView!
@@ -15,19 +15,27 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func Open(_ sender: UIButton) {
-        if isFridgeOn == true {
+        //이미 트루일때 없애고 false일때 메세지 설정이 아니라 탭이동
+        if isFridgeOn == true
+        {
             let openAlert = UIAlertController(title: "Start", message: "Fridge has already opened", preferredStyle: UIAlertController.Style.alert)
             let onAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
             openAlert.addAction(onAction)
             present(openAlert, animated: true, completion: nil)
             
             isFridgeOn = true
-        }else{
+        }else
+        {
             let closeAlert = UIAlertController(title: "Start", message: "Please check exp.date", preferredStyle: UIAlertController.Style.alert)
             let offAction = UIAlertAction(title: "yes", style: UIAlertAction.Style.default, handler: {ACTION in self.Fridge.image =
                 self.fridgeOpen
                 self.isFridgeOn = true
             })
+            
+            //move to fridge tab automatically
+            guard let moveFridge = tabBarController?.viewControllers?[1] else {return}
+            tabBarController?.selectedViewController = moveFridge
+            
             let cancleAction = UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: nil)
             closeAlert.addAction(offAction)
             closeAlert.addAction(cancleAction)
