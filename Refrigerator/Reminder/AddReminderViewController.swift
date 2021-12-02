@@ -5,7 +5,7 @@ import UIKit
 protocol AddReminderViewControllerDelegate: AnyObject {
 //    func addNewReminder(withText: String?)
     func addNewReminder(withText: String?, withCategory: String?)
-    func addNewDate(withText: String?)
+    func addNewDate(withText: String?, withCategory: String?)
 }
 
 class AddReminderViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
@@ -64,7 +64,7 @@ class AddReminderViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     @IBAction func didTapSaveButton(_ sender: UIBarButtonItem) {
         delegate?.addNewReminder(withText: newReminderTextField.text , withCategory: lblPickerView.text)
-        delegate?.addNewDate(withText: lblPickerTime.text)
+        delegate?.addNewDate(withText: lblPickerTime.text, withCategory: lblPickerView.text)
         dismiss(animated: true) {
             debugPrint("Finished dismissing!")
     }

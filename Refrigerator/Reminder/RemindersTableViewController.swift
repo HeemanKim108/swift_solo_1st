@@ -1,28 +1,20 @@
 
 import UIKit
 
-//protocol ReminderTableViewControllerDelegate: AnyObject {
-//    func deliveryData(withText: String?)
-//}
 
 final class RemindersTableViewController: UITableViewController {
     
     private var dateFormat = DateFormatter()
-    private var reminders: [String] = [
-        "Yogurt",
-    ]
-    private var reminders2: [String] = [
-        "2021-11-30",
-    ]
-    private var reminderMeat: [String] = [
-        "Chicken"
-    ]
-    private var reminderFruit: [String] = [
-        "Apple"
-    ]
-    private var reminderEtc: [String] = [
-        "Ramen"
-    ]
+    
+    private var reminders: [String] = ["Yogurt"]
+    private var reminderMeat: [String] = ["Chicken"]
+    private var reminderFruit: [String] = ["Apple"]
+    private var reminderEtc: [String] = ["Ramen"]
+    private var reminders2: [String] = ["2021-12-06"]
+    private var reminders2Meat: [String] = ["2021-12-08"]
+    private var reminders2Fruit: [String] = ["2021-12-10"]
+    private var reminders2Etc: [String] = ["2021-12-30"]
+    
     
     override func viewDidLoad() {
         dateFormat.dateFormat = "yyyy-MM-dd"
@@ -51,7 +43,6 @@ final class RemindersTableViewController: UITableViewController {
         default:
             return 0
         }
-//        return reminders.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -69,15 +60,78 @@ final class RemindersTableViewController: UITableViewController {
             text2 = reminderEtc[indexPath.row]
         }
         cell.textLabel?.text = text2
-        
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 20)
 //        seperate cell
+        
+        
+//do something to change detailText : color depends on date
+        // how to get current time & convert to int => current time
+        let now = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let nowDate = dateFormatter.string(from: now)
+        let changeNowDate: String = nowDate.replacingOccurrences(of: "-", with: "")
+
+        var text3: String = ""
+        if indexPath.section == 0 {
+            let changeDate: String = reminders2[indexPath.row].replacingOccurrences(of: "-", with: "")
+            let convertDate = Int(changeDate)
+            if let safeConvert = convertDate {
+                let convertNowDate = Int(changeNowDate) //ex) 20210101
+                if let safeConvertNowDate = convertNowDate {
+                    if  safeConvert - safeConvertNowDate <= 3 {
+                        var convertValue = String(safeConvert)
+                        convertValue.insert("-", at: convertValue.index(convertValue.startIndex, offsetBy: 4))
+                        convertValue.insert("-", at: convertValue.index(convertValue.endIndex, offsetBy: -2))
+                        text3 = convertValue
+                        cell.detailTextLabel?.text = "Exp.date:\(text3)"
+                        cell.detailTextLabel?.textColor = .red
+                    } else {
+                        cell.detailTextLabel?.text = "Exp.date:\(text3)"
+                        cell.detailTextLabel?.textColor = .black
+                    }
+                }
+            }
+        } else if indexPath.section == 1 {
+            text3 = reminders2Meat[indexPath.row]
+        } else if indexPath.section == 2 {
+            text3 = reminders2Fruit[indexPath.row]
+        } else if indexPath.section == 3 {
+            text3 = reminders2Etc[indexPath.row]
+        }
+//        cell.detailTextLabel?.text = "Exp.date:\(text3)"
+        cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 13)
+        
+        
+        
+
+        
+        let changeDate: String = reminders2[indexPath.row].replacingOccurrences(of: "-", with: "")
+
+        let convertDate = Int(changeDate)
+        if let safeConvert = convertDate {
+            let convertNowDate = Int(changeNowDate) //ex) 20210101
+            if let safeConvertNowDate = convertNowDate {
+                if  safeConvert - safeConvertNowDate <= 3 {
+                    var convertValue = String(safeConvert)
+                    convertValue.insert("-", at: convertValue.index(convertValue.startIndex, offsetBy: 4))
+                    convertValue.insert("-", at: convertValue.index(convertValue.endIndex, offsetBy: -2))
+                    text3 = convertValue
+                    cell.detailTextLabel?.text = "Exp.date:\(text3)"
+                    cell.detailTextLabel?.textColor = .red
+                } else {
+                    cell.detailTextLabel?.text = "Exp.date:\(reminders2[indexPath.row])"
+                    cell.detailTextLabel?.textColor = .black
+                }
+            }
+        }
+//
         
 //        cell.textLabel?.text = reminders[indexPath.row]
         
-        cell.detailTextLabel?.text = "Exp.date:\(reminders2[indexPath.row])"
-        
-        cell.textLabel?.font = UIFont.systemFont(ofSize: 20)
-        cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 13)
+//        cell.detailTextLabel?.text = "Exp.date:\(reminders2[indexPath.row])"
+//        cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 13)
+//        cell.detailTextLabel?.textColor = .red
         
         return cell
     }
@@ -121,6 +175,8 @@ final class RemindersTableViewController: UITableViewController {
 //if I change "reminders" to "reminderMeat", I can put items in Meat section.
 
 extension RemindersTableViewController: AddReminderViewControllerDelegate {
+  
+    
     func addNewReminder(withText text1: String?, withCategory text2: String?) {
         if let text = text2 {
             if text == "Dairy product" {
@@ -140,23 +196,42 @@ extension RemindersTableViewController: AddReminderViewControllerDelegate {
                 }
             } else if text == "others" {
                 if let text0 = text1 {
-                    reminderFruit.append(text0)
+                    reminderEtc.append(text0)
                     tableView.reloadData()
                 }
             }
         }
     }
         
-    func addNewDate(withText maybeText: String?) {
-        if let text = maybeText {
-            reminders2.append(text)
-            tableView.reloadData()
+    func addNewDate(withText text1: String?, withCategory text2: String?) {
+        if let text = text2 {
+            if text == "Dairy product" {
+                if let text0 = text1 {
+                    reminders2.append(text0)
+                    tableView.reloadData()
+                }
+            } else if text == "Meat" {
+                if let text0 = text1 {
+                    reminders2Meat.append(text0)
+                    tableView.reloadData()
+                }
+            } else if text == "Fruit" {
+                if let text0 = text1 {
+                    reminders2Fruit.append(text0)
+                    tableView.reloadData()
+                }
+            } else if text == "others" {
+                if let text0 = text1 {
+                    reminders2Etc.append(text0)
+                    tableView.reloadData()
+                }
             }
+        }
     }
-//    func addNewReminder(withText maybeText: String?, withCategory maybeText2: String) {
+//    func addNewDate(withText maybeText: String?) {
 //        if let text = maybeText {
-//            reminders.append(text)
+//            reminders2.append(text)
 //            tableView.reloadData()
-//        }
+//            }
 //    }
 }

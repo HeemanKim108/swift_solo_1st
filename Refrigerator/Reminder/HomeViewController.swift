@@ -21,7 +21,6 @@ class HomeViewController: UIViewController {
             let onAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
             openAlert.addAction(onAction)
             present(openAlert, animated: true, completion: nil)
-            
             isFridgeOn = true
         }else
         {
