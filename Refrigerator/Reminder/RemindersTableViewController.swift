@@ -47,12 +47,41 @@ final class RemindersTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderCell", for: indexPath)
-        
         var text2: String = ""
         var text3: String = ""
-
+        
+//do something to change detailText : color depends on date
+// how to get current time & convert to int => current time
+        let now = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let nowDate = dateFormatter.string(from: now)
+        let changeNowDate: String = nowDate.replacingOccurrences(of: "-", with: "")
+        
         if indexPath.section == 0 {
             text2 = reminders[indexPath.row]
+            
+            let changeDate: String = reminders2[indexPath.row].replacingOccurrences(of: "-", with: "")
+            let convertDate = Int(changeDate)
+            if let safeConvert = convertDate {
+                let convertNowDate = Int(changeNowDate) //ex) 20211202
+                if let safeConvertNowDate = convertNowDate {
+                    print(safeConvert - safeConvertNowDate <= 3)
+                    if  safeConvert - safeConvertNowDate <= 3 {
+                        var convertValue = String(safeConvert)
+                        convertValue.insert("-", at: convertValue.index(convertValue.startIndex, offsetBy: 4))
+                        convertValue.insert("-", at: convertValue.index(convertValue.endIndex, offsetBy: -2))
+                        text3 = convertValue
+//                        cell.detailTextLabel?.text = "Exp.date:\(text3)"
+                        cell.detailTextLabel?.textColor = .red
+                    } else {
+//                        cell.detailTextLabel?.text = "Exp.date:\(reminders2[indexPath.row])"
+                        text3 = reminders2[indexPath.row]
+                        cell.detailTextLabel?.textColor = .black
+                    }
+                }
+            }
+            
             text3 = reminders2[indexPath.row]
         } else if indexPath.section == 1 {
             text2 = reminderMeat[indexPath.row]
@@ -67,25 +96,7 @@ final class RemindersTableViewController: UITableViewController {
         cell.textLabel?.text = text2
         cell.textLabel?.font = UIFont.systemFont(ofSize: 20)
 //        seperate cell
-        
-        
-//do something to change detailText : color depends on date
-        // how to get current time & convert to int => current time
-        let now = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let nowDate = dateFormatter.string(from: now)
-        let changeNowDate: String = nowDate.replacingOccurrences(of: "-", with: "")
 
-//        if indexPath.section == 0 {
-//            text3 = reminders2[indexPath.row]
-//        } else if indexPath.section == 1 {
-//            text3 = reminders2Meat[indexPath.row]
-//        } else if indexPath.section == 2 {
-//            text3 = reminders2Fruit[indexPath.row]
-//        } else if indexPath.section == 3 {
-//            text3 = reminders2Etc[indexPath.row]
-//        }
         cell.detailTextLabel?.text = "Exp.date:\(text3)"
         cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 13)
         
