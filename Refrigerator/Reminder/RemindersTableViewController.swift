@@ -66,7 +66,6 @@ final class RemindersTableViewController: UITableViewController {
             if let safeConvert = convertDate {
                 let convertNowDate = Int(changeNowDate) //ex) 20211202
                 if let safeConvertNowDate = convertNowDate {
-                    print(safeConvert - safeConvertNowDate <= 3)
                     if  safeConvert - safeConvertNowDate <= 3 {
                         var convertValue = String(safeConvert)
                         convertValue.insert("-", at: convertValue.index(convertValue.startIndex, offsetBy: 4))
@@ -81,22 +80,81 @@ final class RemindersTableViewController: UITableViewController {
                     }
                 }
             }
-            
-            text3 = reminders2[indexPath.row]
         } else if indexPath.section == 1 {
             text2 = reminderMeat[indexPath.row]
-            text3 = reminders2Meat[indexPath.row]
+            
+            let changeDate: String = reminders2Meat[indexPath.row].replacingOccurrences(of: "-", with: "")
+            let convertDate = Int(changeDate)
+            if let safeConvert = convertDate {
+                let convertNowDate = Int(changeNowDate) //ex) 20211202
+//                print(convertNowDate)
+//                print(safeConvert)
+                if let safeConvertNowDate = convertNowDate {
+//                    print(safeConvert - safeConvertNowDate)
+//                    print(safeConvert - safeConvertNowDate <= 3)
+                    if  safeConvert - safeConvertNowDate <= 3 {
+                        var convertValue = String(safeConvert)
+                        convertValue.insert("-", at: convertValue.index(convertValue.startIndex, offsetBy: 4))
+                        convertValue.insert("-", at: convertValue.index(convertValue.endIndex, offsetBy: -2))
+                        text3 = convertValue
+//                        cell.detailTextLabel?.text = "Exp.date:\(text3)"
+                        cell.detailTextLabel?.textColor = .red
+                    } else {
+//                        cell.detailTextLabel?.text = "Exp.date:\(reminders2[indexPath.row])"
+                        text3 = reminders2Meat[indexPath.row]
+                        cell.detailTextLabel?.textColor = .black
+                    }
+                }
+            }
         } else if indexPath.section == 2 {
             text2 = reminderFruit[indexPath.row]
-            text3 = reminders2Fruit[indexPath.row]
+            
+            let changeDate: String = reminders2Fruit[indexPath.row].replacingOccurrences(of: "-", with: "")
+            let convertDate = Int(changeDate)
+            if let safeConvert = convertDate {
+                let convertNowDate = Int(changeNowDate) //ex) 20211202
+//                print(convertNowDate)
+//                print(safeConvert)
+                if let safeConvertNowDate = convertNowDate {
+//                    print(safeConvert - safeConvertNowDate)
+//                    print(safeConvert - safeConvertNowDate <= 3)
+                    if  safeConvert - safeConvertNowDate <= 3 {
+                        var convertValue = String(safeConvert)
+                        convertValue.insert("-", at: convertValue.index(convertValue.startIndex, offsetBy: 4))
+                        convertValue.insert("-", at: convertValue.index(convertValue.endIndex, offsetBy: -2))
+                        text3 = convertValue
+//                        cell.detailTextLabel?.text = "Exp.date:\(text3)"
+                        cell.detailTextLabel?.textColor = .red
+                    } else {
+//                        cell.detailTextLabel?.text = "Exp.date:\(reminders2[indexPath.row])"
+                        text3 = reminders2Fruit[indexPath.row]
+                        cell.detailTextLabel?.textColor = .black
+                    }
+                }
+            }
         } else if indexPath.section == 3 {
             text2 = reminderEtc[indexPath.row]
-            text3 = reminders2Etc[indexPath.row]
+            
+            let changeDate: String = reminders2Etc[indexPath.row].replacingOccurrences(of: "-", with: "")
+            let convertDate = Int(changeDate)
+            if let safeConvert = convertDate {
+                let convertNowDate = Int(changeNowDate) //ex) 20211202
+                if let safeConvertNowDate = convertNowDate {
+                    if  safeConvert - safeConvertNowDate <= 3 {
+                        var convertValue = String(safeConvert)
+                        convertValue.insert("-", at: convertValue.index(convertValue.startIndex, offsetBy: 4))
+                        convertValue.insert("-", at: convertValue.index(convertValue.endIndex, offsetBy: -2))
+                        text3 = convertValue
+                        cell.detailTextLabel?.textColor = .red
+                    } else {
+                        text3 = reminders2Etc[indexPath.row]
+                        cell.detailTextLabel?.textColor = .black
+                    }
+                }
+            }
         }
         cell.textLabel?.text = text2
         cell.textLabel?.font = UIFont.systemFont(ofSize: 20)
-//        seperate cell
-
         cell.detailTextLabel?.text = "Exp.date:\(text3)"
         cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 13)
         
@@ -222,10 +280,4 @@ extension RemindersTableViewController: AddReminderViewControllerDelegate {
             }
         }
     }
-//    func addNewDate(withText maybeText: String?) {
-//        if let text = maybeText {
-//            reminders2.append(text)
-//            tableView.reloadData()
-//            }
-//    }
 }
