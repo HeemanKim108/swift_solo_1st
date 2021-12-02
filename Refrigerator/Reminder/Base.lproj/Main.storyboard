@@ -39,9 +39,8 @@
                                     <navigationItem title="RECIPES" id="4Vz-ww-k0v"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7g-gX-XOF">
-                                <rect key="frame" x="20" y="356" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7g-gX-XOF">
+                                <rect key="frame" x="75" y="312" width="264" height="31"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
@@ -51,9 +50,8 @@
                                     <action selector="UrlAction:" destination="Rxi-vT-Sw6" eventType="touchUpInside" id="ZU2-hA-MJn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gw-aS-cmH">
-                                <rect key="frame" x="20" y="528" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gw-aS-cmH">
+                                <rect key="frame" x="75" y="527" width="264" height="31"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
@@ -62,8 +60,14 @@
                                     <action selector="UrlAction:" destination="Rxi-vT-Sw6" eventType="touchUpInside" id="Lxn-Yt-87I"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vyk-lx-sgN">
+                                <rect key="frame" x="20" y="129" width="374" height="180"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rvv-OK-Zek">
+                                <rect key="frame" x="20" y="342" width="374" height="180"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iC5-MX-9Vk">
-                                <rect key="frame" x="20" y="97" width="374" height="31"/>
+                                <rect key="frame" x="75" y="96" width="264" height="31"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
@@ -73,24 +77,38 @@
                                     <action selector="UrlAction:" destination="Rxi-vT-Sw6" eventType="touchUpInside" id="v0z-kA-mby"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vyk-lx-sgN">
-                                <rect key="frame" x="20" y="136" width="374" height="196"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UWJ-rt-pqf">
+                                <rect key="frame" x="20" y="555" width="374" height="180"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YUe-BS-hlR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="iC5-MX-9Vk" firstAttribute="leading" secondItem="YUe-BS-hlR" secondAttribute="leading" constant="20" id="3XO-bk-5yC"/>
-                            <constraint firstItem="YUe-BS-hlR" firstAttribute="trailing" secondItem="iC5-MX-9Vk" secondAttribute="trailing" constant="20" id="4yn-OJ-exA"/>
+                            <constraint firstItem="YUe-BS-hlR" firstAttribute="trailing" secondItem="5Gw-aS-cmH" secondAttribute="trailing" constant="75" id="7Id-8Y-8r2"/>
                             <constraint firstItem="Vyk-lx-sgN" firstAttribute="leading" secondItem="YUe-BS-hlR" secondAttribute="leading" constant="20" id="9CA-PO-ZaO"/>
-                            <constraint firstItem="Vyk-lx-sgN" firstAttribute="top" secondItem="YUe-BS-hlR" secondAttribute="top" constant="48" id="C29-ho-eYU"/>
-                            <constraint firstItem="iC5-MX-9Vk" firstAttribute="top" secondItem="YUe-BS-hlR" secondAttribute="top" constant="9" id="rO5-ZV-0Ss"/>
+                            <constraint firstItem="YUe-BS-hlR" firstAttribute="trailing" secondItem="Z7g-gX-XOF" secondAttribute="trailing" constant="75" id="IyD-lf-76F"/>
+                            <constraint firstItem="Vyk-lx-sgN" firstAttribute="top" secondItem="YUe-BS-hlR" secondAttribute="top" constant="43" id="Jd0-FE-4CL"/>
+                            <constraint firstItem="iC5-MX-9Vk" firstAttribute="leading" secondItem="YUe-BS-hlR" secondAttribute="leading" constant="75" id="NVT-9C-Kiy"/>
+                            <constraint firstItem="5Gw-aS-cmH" firstAttribute="leading" secondItem="YUe-BS-hlR" secondAttribute="leading" constant="75" id="Ql6-rb-X1w"/>
+                            <constraint firstItem="Z7g-gX-XOF" firstAttribute="top" secondItem="YUe-BS-hlR" secondAttribute="top" constant="224" id="SGA-km-l0C"/>
+                            <constraint firstItem="5Gw-aS-cmH" firstAttribute="top" secondItem="YUe-BS-hlR" secondAttribute="top" constant="439" id="UWA-Fw-btq"/>
+                            <constraint firstItem="YUe-BS-hlR" firstAttribute="trailing" secondItem="rvv-OK-Zek" secondAttribute="trailing" constant="20" id="VAk-ab-PCv"/>
+                            <constraint firstItem="UWJ-rt-pqf" firstAttribute="leading" secondItem="YUe-BS-hlR" secondAttribute="leading" constant="20" id="YWu-Kh-dCv"/>
+                            <constraint firstItem="YUe-BS-hlR" firstAttribute="trailing" secondItem="iC5-MX-9Vk" secondAttribute="trailing" constant="75" id="Zfc-yR-ylK"/>
+                            <constraint firstItem="UWJ-rt-pqf" firstAttribute="top" secondItem="YUe-BS-hlR" secondAttribute="top" constant="474" id="c01-25-T41"/>
+                            <constraint firstItem="rvv-OK-Zek" firstAttribute="top" secondItem="YUe-BS-hlR" secondAttribute="top" constant="258" id="dsF-dF-3Gy"/>
+                            <constraint firstItem="iC5-MX-9Vk" firstAttribute="top" secondItem="YUe-BS-hlR" secondAttribute="top" constant="8" id="rO5-ZV-0Ss"/>
+                            <constraint firstItem="rvv-OK-Zek" firstAttribute="leading" secondItem="YUe-BS-hlR" secondAttribute="leading" constant="20" id="sfH-0X-5ys"/>
                             <constraint firstItem="YUe-BS-hlR" firstAttribute="trailing" secondItem="Vyk-lx-sgN" secondAttribute="trailing" constant="20" id="vlL-R8-rpL"/>
+                            <constraint firstItem="Z7g-gX-XOF" firstAttribute="leading" secondItem="YUe-BS-hlR" secondAttribute="leading" constant="75" id="zGt-zP-9Ka"/>
+                            <constraint firstItem="YUe-BS-hlR" firstAttribute="trailing" secondItem="UWJ-rt-pqf" secondAttribute="trailing" constant="20" id="zUS-1I-riN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QrK-YR-ZaI"/>
                     <connections>
+                        <outlet property="English" destination="UWJ-rt-pqf" id="s6m-2z-nUL"/>
                         <outlet property="Japanese" destination="Vyk-lx-sgN" id="hUr-SI-3tj"/>
+                        <outlet property="Korean" destination="rvv-OK-Zek" id="wCU-rh-kaa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45k-wI-Ii5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -165,7 +183,6 @@
                         <segue destination="SK6-VL-hgr" kind="relationship" relationship="viewControllers" id="X1t-Ny-Nrd"/>
                         <segue destination="MdH-TV-BlR" kind="relationship" relationship="viewControllers" id="jjc-TD-sMI"/>
                         <segue destination="Xd6-ov-NEv" kind="relationship" relationship="viewControllers" id="dyj-nK-HOK"/>
-                        <segue destination="eLV-Ju-Ski" kind="relationship" relationship="viewControllers" id="7su-E7-wJ7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlG-Cv-N8B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

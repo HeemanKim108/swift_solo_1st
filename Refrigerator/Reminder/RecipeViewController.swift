@@ -10,40 +10,43 @@ import UIKit
 final class RecipeViewController: UIViewController {
     
     @IBOutlet weak var Japanese: UIImageView!
-//    @IBOutlet weak var Korean: UIImageView!
-//    @IBOutlet weak var English: UIImageView!
-    
+    @IBOutlet weak var Korean: UIImageView!
+    @IBOutlet weak var English: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-//        let customImageJ = UIImage(named: "Japanese")
-//        let newWidth = 500
-//        let newHeight = 400
-//        let newImageRect = CGRect(x: 20, y: 118, width: newWidth, height: newHeight)
-//        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
-//        customImageJ?.draw(in: newImageRect)
-//        let newImageJ = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
-//        UIGraphicsEndImageContext()
-//
-//        let customImageK = UIImage(named: "Korean")
-//        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
-//        customImageK?.draw(in: newImageRect)
-//        let newImageK = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
-//        UIGraphicsEndImageContext()
-//
-//        let customImageE = UIImage(named: "English")
-//        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
-//        customImageE?.draw(in: newImageRect)
-//        let newImageE = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
-//        UIGraphicsEndImageContext()
-//
-        Japanese.image = UIImage(named: "Japanese")
-//        Korean.image = UIImage(named: "Korean")
-//        English.image = UIImage(named: "English")
-//
+    Japanese.image = UIImage(named: "Japanese")
+    Korean.image = UIImage(named: "Korean")
+    English.image = UIImage(named: "English")
     }
  
+//    let imageShadowView: UIView = {
+//        let aView = UIView()
+//        //shadow
+//        aView.layer.shadowOffset = CGSize(width: 5, height: 5)
+//        aView.layer.shadowOpacity = 0.7
+//        aView.layer.shadowRadius = 5
+//        aView.layer.shadowColor = UIColor.gray.cgColor
+//        return aView
+//    }()
+    
+//    let imageView: UIImageView = {
+//        let aImageView = UIImageView()
+//        aImageView.backgroundColor = .red
+//        aImageView.image = UIImage(named: "Japanese")
+//        aImageView.contentMode = .scaleAspectFit
+//        //round
+//        aImageView.layer.cornerRadius = 150
+//        //cut over
+//        aImageView.clipsToBounds = true
+//
+//        aImageView.translatesAutoresizingMaskIntoConstraints = false
+//        return aImageView
+//    }()
+//
+    
+    
     @IBAction func UrlAction(_ sender: UIButton) {
         if let url = URL(string: "https://www.allrecipes.com/recipes/") {
             UIApplication.shared.open(url, options: [:])
